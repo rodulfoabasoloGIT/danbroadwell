@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import "responsive";
+@import "normalize";
+@import "banner";
+@import "navigation";
+@import "content";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0 auto;
+}
+h1,h2{
+    font-size: 1.6em;
+}
+h3,h4{
+    font-size: 1.2em;
+}
+
+h5,h6{
+    font-size: 1.0em;
+}
+
+
+p,a,qoute,span,blockquote{
+    font-size: 1.2em;
+    color: #9a8c7e;
+}
+
+p{
+    line-height: 1.7;
+    margin: 1.2em 0 !important;
+}
+
+button{
+    
+    background-color: #ffe5b5;
+    border: none;
+    padding: 2% 20px;
+    margin-top: 6%;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    a{
+        color: #d48f10 !important;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+/*Grid Elements*/
+
+.grid-two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    margin: 0 5%;
+    align-items: center;
+}
+
+
+.grid-template-four-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.container-gt{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+.separator-line{
+    border-bottom: 1px solid #d6d1d1ee;
+}

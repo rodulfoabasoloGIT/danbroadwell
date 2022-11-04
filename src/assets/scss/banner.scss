@@ -1,0 +1,243 @@
+.banner-content-wrapper{
+
+    padding: 0 10%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 90%;
+
+    h1{
+        span{
+           
+            // color: #df8978 !important;
+            display: block;
+
+            &:nth-child(2){
+                position: relative;
+                z-index: 10;
+            }
+        }
+    }
+    
+    .p-banner{
+        text-align: justify;
+        font-size: 1.50rem;
+    }
+
+    .btn-container{  
+        
+        button{
+  
+            display: inline-block;
+            outline: 0;
+            cursor: pointer;
+            border: 2px solid #000;
+            border-radius: 3px;
+            color: #fff;
+            background: #000;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            padding: 12px 20px;
+            text-align:center;
+            transition-duration: .15s;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            :hover{
+                color: #000;
+                background: rgb(255, 218, 87);
+            }
+           
+        
+        }
+    }
+
+}
+
+.banner-section{
+    background: url("../../../static/banner/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // background: linear-gradient(#2c3834, #314c3b);
+    height: 100vh;
+
+    @media (max-width:1366px) {
+        height: 100vh;
+      }
+
+    h1{
+        font-size: 2.4rem;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        
+
+        // &:after{
+            // content: '';
+            // width: 375px;
+            // height: 62px;
+            // position: absolute;
+            // display: block;
+            // transform: translate(3px, -39px);
+            // // background: #eac071;
+            // z-index: 1;
+            // animation-name: after_line;
+            // animation-duration:2s;
+            // transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        // }
+        @media (max-width:1366px) {
+            text-align: center;
+          }
+    }
+}
+
+.cite {
+    display: block;
+    font-style: italic;
+}
+.block {
+    font-size: 1.25rem;
+    margin: 10px;
+}   
+
+.f-letters{
+    font-family: 'Marck Script', cursive;
+    display: inline-block !important;
+    font-size: 99px;
+}
+
+.wrapper-bg-right{
+    display: flex;
+    align-items: center;
+    // background: #95efa8;
+    .banner-img{
+        text-align: center;
+        transform: translateX(-39%);
+        img{
+            width: 450px;
+            max-width: 100%;
+            transform: translateY(20px);
+        }
+    }
+}
+
+
+.grid-two-layout-col{
+    display: grid;
+    grid-template-columns: 1fr 32%;
+
+    
+
+    .wrapper-bg-left{
+     
+    }
+}
+
+.banner-img-col{
+
+    transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+
+    // &:before{
+        // content: "";
+        // background: url("../../../static/banner/circle_svg.svg");
+        // width: 25vw;
+        // height: 500px;
+        // position: absolute;
+        // background-repeat: no-repeat;
+        // top: 7px;
+        // transform: translateX(44px);
+    // }
+
+    img{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        margin-top: 20%;
+        transform: scale(1.5);
+    }
+
+    // .img-banner-wrapper{
+        
+        // &:before{
+        //     content: "Bread & Joy";
+        //     position: absolute;
+        //     top: 5%;
+        //     text-transform: uppercase;
+        //     font-size: 4vw;
+        //     font-weight: 900;
+        //     color: #ffffff;
+        //     transform: translateX(66px);
+        //     z-index: 20;
+        // }
+
+        // &:after{
+        //     content: "Joy";
+        //     position: absolute;
+        //     top: 35%;
+        //     text-transform: uppercase;
+        //     font-size: 8vw;
+        //     font-weight: 900;
+        //     color: #ffffff;
+        //     transform: translateX(-173%);
+        // }
+    // }s
+}
+
+
+/*Animated Text*/
+
+
+.first-block{
+    overflow: hidden;
+    display: block;
+    span{
+        animation-name: animate_text_up;
+        animation-duration:2s;
+        transition: cubic-bezier(0.86, 0, 0.07, 1);
+    }
+}
+
+
+.second-block{
+    overflow: hidden;
+    display: block;
+    span{
+        animation-name: animate_text_up;
+        animation-duration:4s;
+    }
+}
+
+#color-o{
+    // color: #da7843 !important;
+}
+
+
+@keyframes after_line {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes animate_text_up{
+    0% {
+        transform: translateY(69px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
