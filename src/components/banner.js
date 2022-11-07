@@ -63,9 +63,9 @@ const Banner = () => {
                 </p>
 
                 <div className="btn-container">
-                  <button className="btn-book">
-                    <Link to="/about-the-book">Read More</Link>
-                  </button>
+                  <Link to="/about-the-book">
+                    <button className="btn-book">Read More</button>
+                  </Link>
                 </div>
               </div>
             </div>

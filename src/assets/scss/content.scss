@@ -76,7 +76,7 @@
     border: 5px solid black;
     padding: 4% 3%;
     p {
-      font-size: 1.5rem;
+      font-size: 20px;
       text-align: justify;
     }
 
@@ -107,7 +107,8 @@
     width: 50%;
     position: relative;
     z-index: 10;
-    top: 100px;
+    top: 70px;
+    right: 5px;
   }
 }
 
@@ -477,7 +478,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
   // margin-bottom: 40px;
 
   h2 {
@@ -566,7 +567,7 @@
 
 .flex-container {
   // display: grid;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

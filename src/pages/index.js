@@ -8,15 +8,15 @@ import MidMain from "../components/mid-main"
 import ParallaxBottom from "../components/parallax-bottom"
 import Newsletter from "../components/newsletter"
 
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout>
-  <Helmet title="Home | Kristi Falk & Dr. Daniel Falk"/>
-      <Nav pathExt={props.path}/>
-      <Banner/> 
-      <ParallaxBottom/>
-      <UpperMain/> 
-      <MidMain/>    
-      <Newsletter/> 
+    <Helmet title="Home | Kristi Falk & Dr. Daniel Falk" />
+    <Nav pathExt={props.path} />
+    <Banner />
+    <UpperMain />
+    <ParallaxBottom />
+    <MidMain />
+    <Newsletter />
   </Layout>
 )
 
